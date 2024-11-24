@@ -10,7 +10,11 @@ def task_create(request):
             <h3>Vazifa nomi: <input type="text" name="task_name"></h3>
             <h3>Tavsif: <textarea type="text" name="description"></textarea></h3>
             <h3>Muddati: <input type="date" name="deadline"></h3>
-            <h3>Muhimlik darajasi: <input type="text" name="priority"></h3>
+            <h3>Muhimlik darajasi: <select name="priority" id="priority">
+            <option value="Past">Past</option>
+            <option value="Past">O'rta</option>
+            <option value="Past">Yuqori</option>
+            </select></h3>
             <button type="submit">Vazifani saqlash</button>
     </form>
     """
